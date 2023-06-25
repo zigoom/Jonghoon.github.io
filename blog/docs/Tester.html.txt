@@ -1,8 +1,0 @@
-<html>
-<head>
-<title> Test Page </title>
-</haed>
-<body>
-<h1>깃 블로그 테스트 페이지</h1>
-</body>
-</html>
