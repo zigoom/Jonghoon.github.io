@@ -3,8 +3,23 @@
     <router-link to="/">Home</router-link> |    
     <router-link to="/about">About</router-link>
   </nav>
+  
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
   <router-view/>
 </template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'HomeView',
+  components: {
+    HelloWorld
+  }
+}
+</script>
 
 <style>
 #app {
