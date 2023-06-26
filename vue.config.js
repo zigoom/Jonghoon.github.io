@@ -3,8 +3,8 @@ module.exports = defineConfig({
     transpileDependencies: true
 });
 module.exports = {
-    publicPath: "/portfolio/",
-    outputDir: "docs",
+    outputDir: "./docs",
+    publicPath: "./",
 };
 // module.exports = {
 //   publicPath: '',
