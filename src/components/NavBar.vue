@@ -1,7 +1,12 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://zigoom.github.io/portfolioPage/"><b>Portfolio</b>&nbsp;&nbsp;&nbsp;</a>
+        <router-link  to="/home" class="nav-link navbar-brand">
+          <b>Portfolio</b>&nbsp;&nbsp;&nbsp;
+        </router-link> 
+        <!-- <a class="navbar-brand" href="https://zigoom.github.io/portfolioPage/">
+        <b>Portfolio</b>&nbsp;&nbsp;&nbsp;</a> -->
+
         <!-- <a class="navbar-brand" href="/"><b>Portfolio</b>&nbsp;&nbsp;&nbsp;</a> -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -13,8 +18,8 @@
               (왼쪽, 오른쪽 이렇게 2반복 한다는거임)-->
             <li class="nav-item" v-for="menu_object in menu.value" :key="menu_object.key">
               <router-link :to="menu_object.url" class="nav-link">
-              <b>{{ menu_object.value }}</b>
-            </router-link> 
+                <b>{{ menu_object.value }}</b>
+              </router-link> 
               <!-- router-link에서 router-view에 띄워줄 내용에 대한 속성을 넣어준다,-->
             </li> 
             <!-- 왼쪽,오른쪽 메뉴가 갖고있는 value 값인 메뉴에 대한 정보를 가져와

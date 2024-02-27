@@ -11,7 +11,7 @@ export default createStore({
         device:'Android, PC',
         etc: 'Photon',
         gitLink: '',
-        image: './images/img1.png',
+        image: 'images/img1.png',
         title: 'Photon을 이용한 FPS 게임 (PhotonAtteck)',
         contents: 'Gear VR을 사용하여 총을 발사하는 콘텐츠를 PC 기반으로 변경, Photon PUN2로 적용하여 네트워크상에서 사용자들이 대전하는 콘텐츠'            
       },{

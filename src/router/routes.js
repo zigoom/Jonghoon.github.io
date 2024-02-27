@@ -13,7 +13,8 @@ const routes = [
   { path: '/python',name: 'python', component: Other},
   { path: '/spring',name: 'spring', component: Other},
   { path: '/unity', name: 'unity',  component: Other},
-  { path: '/:catchAll(.*)+', component: NotFound },
+  { path: '/:catchAll(.*)+', component: Home },
+  // { path: '/:catchAll(.*)+', component: NotFound },
 ]
 // path 를 지정해서 해당 vue를 보여주게 한다.
 // redurect : path로 들어온 url을 다른 url로 보여주기 위해 사용한다.
