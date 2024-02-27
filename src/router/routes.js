@@ -9,7 +9,7 @@ const NotFound = defineComponent({
 const routes = [
   { path: '/', redirect: '/home' }, 
   { path: '/home',  name: 'home',   component: Home },  
-  { path: '/vue',   name: 'vue',    component: Other},
+  { path: '/portfolioPage/vue',   name: 'vue',    component: Other},
   { path: '/python',name: 'python', component: Other},
   { path: '/spring',name: 'spring', component: Other},
   { path: '/unity', name: 'unity',  component: Other},

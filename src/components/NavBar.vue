@@ -38,7 +38,7 @@ export default {
   setup() {
     const menus = [
       { key: 'home',    value: ' All ',     url: '/home',   position: 'left', link: 'home'},
-      { key: 'vue',     value: ' Vue ',     url: '/vue',    position: 'left', link: 'other'},
+      { key: 'vue',     value: ' Vue ',     url: '/portfolioPage/vue',    position: 'left', link: 'other'},
       { key: 'python',  value: ' Python ',  url: '/python', position: 'left', link: 'other'},
       { key: 'spring',  value: ' Spring ',  url: '/spring', position: 'left', link: 'other'},
       { key: 'unity',   value: ' Unity ',   url: '/unity',  position: 'left', link: 'other'},
