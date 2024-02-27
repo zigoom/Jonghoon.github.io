@@ -24,6 +24,7 @@ export default defineConfig({
   build: {
     // assetsInlineLimit: 0, // 모든 이미지를 별도 파일로 추출
     // assetsDir: './public/images', // 이미지 파일이 포함될 디렉토리를 지정합니다.
+    outDir:'./docs'
   },
   plugins: [vue()]
 })
