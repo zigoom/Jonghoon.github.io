@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <router-link  to="/home" class="nav-link navbar-brand">
+        <router-link to="/portfolioPage/home" class="nav-link navbar-brand">
           <b>Portfolio</b>&nbsp;&nbsp;&nbsp;
         </router-link> 
         <!-- <a class="navbar-brand" href="https://zigoom.github.io/portfolioPage/">
@@ -37,13 +37,13 @@ export default {
   name: 'NavBar',
   setup() {
     const menus = [
-      { key: 'home',    value: ' All ',     url: '/home',   position: 'left', link: 'home'},
+      { key: 'home',    value: ' All ',     url: '/portfolioPage/home',   position: 'left', link: 'home'},
       { key: 'vue',     value: ' Vue ',     url: '/portfolioPage/vue',    position: 'left', link: 'other'},
-      { key: 'python',  value: ' Python ',  url: '/python', position: 'left', link: 'other'},
-      { key: 'spring',  value: ' Spring ',  url: '/spring', position: 'left', link: 'other'},
-      { key: 'unity',   value: ' Unity ',   url: '/unity',  position: 'left', link: 'other'},
-      { key: 'profile', value: ' Profile ', url: '/profile',position: 'right',link: ''},
-      { key: 'admin',   value: ' Admin ',   url: '/admin',  position: 'right',link: ''},
+      { key: 'python',  value: ' Python ',  url: '/portfolioPage/python', position: 'left', link: 'other'},
+      { key: 'spring',  value: ' Spring ',  url: '/portfolioPage/spring', position: 'left', link: 'other'},
+      { key: 'unity',   value: ' Unity ',   url: '/portfolioPage/unity',  position: 'left', link: 'other'},
+      { key: 'profile', value: ' Profile ', url: '/portfolioPage/profile',position: 'right',link: ''},
+      { key: 'admin',   value: ' Admin ',   url: '/portfolioPage/admin',  position: 'right',link: ''},
     ]
 
     const left_menus = computed(() => menus.filter((i) => i.position == 'left'))
