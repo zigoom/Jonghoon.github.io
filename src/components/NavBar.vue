@@ -17,9 +17,24 @@
           <!-- ul 의 반복으로는 메뉴의 왼쪽정렬, 오른쪽 정열을 만들어낸다 
               (왼쪽, 오른쪽 이렇게 2반복 한다는거임)-->
             <li class="nav-item" v-for="menu_object in menu.value" :key="menu_object.key">
-              <router-link :to="menu_object.url" class="nav-link">
+              <template v-if="menu_object.key === 'profile'">
+                  <a :href="menu_object.url" class="nav-link">
+                      <b>{{ menu_object.value }}</b>
+                  </a>
+              </template>
+              <template v-else-if="menu_object.key === 'admin'">
+                  <a :href="menu_object.url" class="nav-link">
+                      <b>{{ menu_object.value }}</b>
+                  </a>
+              </template>
+              <template v-else>
+                  <router-link :to="menu_object.url" class="nav-link">
+                      <b>{{ menu_object.value }}</b>
+                  </router-link> 
+              </template>
+              <!-- <router-link :to="menu_object.url" class="nav-link">
                 <b>{{ menu_object.value }}</b>
-              </router-link> 
+              </router-link>  -->
               <!-- router-link에서 router-view에 띄워줄 내용에 대한 속성을 넣어준다,-->
             </li> 
             <!-- 왼쪽,오른쪽 메뉴가 갖고있는 value 값인 메뉴에 대한 정보를 가져와
@@ -42,8 +57,8 @@ export default {
       { key: 'python',  value: ' Python ',  url: '/PortfolioPage/python', position: 'left', link: 'other'},
       { key: 'spring',  value: ' Spring ',  url: '/PortfolioPage/spring', position: 'left', link: 'other'},
       { key: 'unity',   value: ' Unity ',   url: '/PortfolioPage/unity',  position: 'left', link: 'other'},
-      { key: 'profile', value: ' Profile ', url: '/PortfolioPage/profile',position: 'right',link: ''},
-      { key: 'admin',   value: ' Admin ',   url: '/PortfolioPage/admin',  position: 'right',link: ''},
+      { key: 'profile', value: ' Profile ', url: 'https://zigoom.github.io',position: 'right',link: ''},
+      { key: 'admin',   value: ' Admin ',   url: 'https://github.com/zigoom',  position: 'right',link: ''},
     ]
 
     const left_menus = computed(() => menus.filter((i) => i.position == 'left'))

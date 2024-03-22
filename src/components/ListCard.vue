@@ -9,7 +9,7 @@
       <h5 class="card-title"><b>{{ data.title }}</b></h5>
       <p class="card-text"> {{ data.contents }} </p>
     </div>
-    <div class="card-body">
+    <div class="card-footer" style="background-color: white;">
       <p class="card-text" style=""> <small><b>{{ data.platform }} </b></small></p>
     </div>
     <div class="card-footer">
