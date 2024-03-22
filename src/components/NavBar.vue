@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <router-link to="/portfolioPage/home" class="nav-link navbar-brand">
+        <router-link to="/PortfolioPage/home" class="nav-link navbar-brand">
           <b>Portfolio</b>&nbsp;&nbsp;&nbsp;
         </router-link> 
         <!-- <a class="navbar-brand" href="https://zigoom.github.io/portfolioPage/">
