@@ -10,7 +10,7 @@ export default createStore({
         type: 'app',
         device:'Android, PC',
         etc: '',
-        gitLink: 'https://github.com/zigoom/DrawAndPainting',
+        gitLink: 'https://github.com/zigoom/ShooterDefense',
         image: './images/img1.png',
         title: 'GearVR을 이용한 FPS 디펜스 게임 (ShooterDefense)',
         contents: 'Gear VR을 사용하여 총을 발사하는 3D 디팬스 슈팅게임 대전하는 콘텐츠'            
