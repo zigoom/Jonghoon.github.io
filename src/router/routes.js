@@ -8,11 +8,11 @@ const NotFound = defineComponent({
 
 const routes = [
   { path: '/', redirect: '/home' }, 
-  { path: '/portfolioPage/home',  name: 'home',   component: Home },  
-  { path: '/portfolioPage/vue',   name: 'vue',    component: Other},
-  { path: '/portfolioPage/python',name: 'python', component: Other},
-  { path: '/portfolioPage/spring',name: 'spring', component: Other},
-  { path: '/portfolioPage/unity', name: 'unity',  component: Other},
+  { path: '/PortfolioPage/home',  name: 'home',   component: Home },  
+  { path: '/PortfolioPage/vue',   name: 'vue',    component: Other},
+  { path: '/PortfolioPage/python',name: 'python', component: Other},
+  { path: '/PortfolioPage/spring',name: 'spring', component: Other},
+  { path: '/PortfolioPage/unity', name: 'unity',  component: Other},
   { path: '/:catchAll(.*)+', component: Home },
   // { path: '/:catchAll(.*)+', component: NotFound },
 ]

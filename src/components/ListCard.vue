@@ -8,7 +8,9 @@
     <div class="card-body">
       <h5 class="card-title"><b>{{ data.title }}</b></h5>
       <p class="card-text"> {{ data.contents }} </p>
-      <p class="card-text"> <small><b>{{ data.platform }} </b></small></p>
+    </div>
+    <div class="card-body">
+      <p class="card-text" style=""> <small><b>{{ data.platform }} </b></small></p>
     </div>
     <div class="card-footer">
       <small class="text-muted">
