@@ -82,7 +82,7 @@ export default createStore({
         etc: 'Flask + Swagger, PyCharm 2023.1.3, keras, FinanceDataReader',
         gitLink: 'https://github.com/zigoom/BlueOceanPython',
         image: './images/img8.png',
-        title: '주식 데이터 수집 AI 예측 RestApi 서버',
+        title: '주식 데이터 수집, AI 예측 REST API 서버',
         contents: '주식 데이터를 수집 및 가공하여 REST API로 제공하는 파이썬 플라스크 서버'           
       }
       ,{
