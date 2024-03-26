@@ -94,7 +94,7 @@ export default createStore({
         gitLink: 'https://github.com/zigoom/PortfolioPage',
         image: './images/img9.png',
         title: 'Vue 를 사용한 Portfolio gitpage',
-        contents: 'vue언어를 사용해서 gitpage에서 정적으로 프로젝트의 목록을 간략하게 보여주는 사이트 제작'
+        contents: 'vue를 사용해서 gitpage에서 프로젝트의 목록을 간략하게 보여주는 사이트 제작'
       },
     ]
   },
